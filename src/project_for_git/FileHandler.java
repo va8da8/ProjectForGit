@@ -44,6 +44,7 @@ class FileHandler {
             System.err.println(e.getMessage());
         }
     }
+<<<<<<< HEAD
 
     /*//Этот метод получает параметр LinkedList<Employee> вызывается каждый раз, когда пользователь хочет удалить сотрудника.
     void overwriteFile(LinkedList<Employee>em) {
@@ -72,5 +73,7 @@ class FileHandler {
             System.err.println(e.getMessage());
         }
     }*/
+=======
+>>>>>>> e561ae7 (Initial commit)
 }
 
