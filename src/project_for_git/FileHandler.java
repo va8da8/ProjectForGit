@@ -44,36 +44,5 @@ class FileHandler {
             System.err.println(e.getMessage());
         }
     }
-<<<<<<< HEAD
-
-    /*//Этот метод получает параметр LinkedList<Employee> вызывается каждый раз, когда пользователь хочет удалить сотрудника.
-    void overwriteFile(LinkedList<Employee>em) {
-        String s;
-        //Создается временный файл firedEmployee.temp, в который записываются все данные из LinkedList.
-        //Должен перезаписывать все существующие данные в файле, для чего во втором аргументе передается false.
-        try(BufferedWriter writer=new BufferedWriter(new FileWriter("employee.temp", false))) {
-            //Перебираем элементы переданной коллекции LinkedList.
-            for(Employee employee:em) {
-                //Для получения строкового представления элемента.
-                s=employee.toString();
-                writer.write(s + "\n");
-            }
-        } catch(IOException e) {
-            System.err.println(e.getMessage());
-        }
-        try {
-            //Внутри блока объявляются два объекта File f и tf:
-            File f=new File("currentEmployee.txt");
-            File tf=new File("employee.temp");
-            //Метод delete() используется для удаления f,
-            f.delete();
-            //Метод renameTo() — для переименования tf
-            tf.renameTo(f);
-        } catch(Exception e) {
-            System.err.println(e.getMessage());
-        }
-    }*/
-=======
->>>>>>> e561ae7 (Initial commit)
 }
 
