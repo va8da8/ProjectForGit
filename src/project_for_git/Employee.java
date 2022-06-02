@@ -1,23 +1,24 @@
 package project_for_git;
 
 
-import java.util.Formatter;
-
 //Этот класс содержит основную информацию о сотруднике.
 class Employee {
+
 
     private int userID;
     private String name;
     private String surname;
+    private String status;
     private int age;
 
 
     //Внутри конструктора четыре параметра присваиваются соответствующим полям
-    Employee(int userID,String name,String surname,int age){
+    Employee(int userID,String name,String surname,String status,int age){
 
         this.userID=userID;
         this.name=name;
         this.surname=surname;
+        this.status=status;
         this.age=age;
     }
 
@@ -32,17 +33,16 @@ class Employee {
     String getSurname() {return surname;}
     void setSurname(String surname) {this.surname = surname;}
 
+    String getStatus() {return status;}
+    void setStatus() {this.status = "УВОЛЕН";}
+
     int getAge() {return age;}
     void setAge(int age) {this.age=age;}
 
 
-    //Метод возвращает строку с информацией о работнике
     @Override
     public String toString() {
-        Formatter fmt = new Formatter();
-        String a;
-        a= String.valueOf(fmt.format("%6s %20s %20s %20s",userID,name,surname,age));
-        return a;
-
+        return  userID+" "+name+" "+surname+" "+status+" "+age;
     }
 }
+
